@@ -12,7 +12,22 @@ while True:
         print("5. Salir")
         opcion=input("selecciones una opción (1-5):") 
         if opcion=="1":
-                pass
+                codigo = int(input("Ingrese código único de la pizza: "))
+                nombre = input("Ingrese nombre de la pizza: ").strip().title()
+                masa = input("Ingrese tipo de masa: ").strip().title()
+                precio = float(input("Ingrese precio unitario: $"))
+                stock = int(input("Ingrese stock disponible: "))
+
+                pizza = {
+              "codigo": codigo,
+              "nombre": nombre,
+              "masa": masa,
+             "precio": precio,
+             "stock": stock
+              }
+                pizzas.append(pizza)
+                print("Pizza registrada correctamente.")
+                time.sleep(2)
         elif opcion=="2":
                 pass
         elif opcion=="3":
