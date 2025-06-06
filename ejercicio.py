@@ -32,7 +32,10 @@ while True:
                 if len(pizzas) == 0:
                    print("No hay pizzas registradas.")
                 else:
-                   print("\n--- CATÁLOGO DE PIZZAS ---")
+                   print("\n--- catálogo de pizza---")
+                   for p in pizzas:
+                      print(f"Código: {p['codigo']}, Nombre: {p['nombre']}, Masa: {p['masa']}, Precio: ${p['precio']:.2f}, Stock: {p['stock']}")
+                input("\nPresione Enter para continuar...")
         
         elif opcion=="3":
                 pass
