@@ -29,7 +29,11 @@ while True:
                 print("Pizza registrada correctamente.")
                 time.sleep(2)
         elif opcion=="2":
-                pass
+                if len(pizzas) == 0:
+                   print("No hay pizzas registradas.")
+                else:
+                   print("\n--- CATÁLOGO DE PIZZAS ---")
+        
         elif opcion=="3":
                 pass
         elif opcion=="4":
